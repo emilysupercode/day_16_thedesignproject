@@ -44,7 +44,9 @@ p {
 ===========================  */
 
 header {
-    background: url("../img/ilustracion1.png") no-repeat top right;
+    background-image: url("../img/ilustracion_people.png"), url("../img/ilustracion1.png");
+    background-repeat: no-repeat;
+    background-position: top right;
     width: 100%;
     background-size: 50%;
 }
