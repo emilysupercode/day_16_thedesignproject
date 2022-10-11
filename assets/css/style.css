@@ -43,13 +43,33 @@ p {
     HEADER
 ===========================  */
 
+/* 
+#person {
+    background-image: url("../img/ilustracion_people.png");
+    background-size: contain;
+    width: 30px;
+    background-position: top right;
+    z-index: 1;
+    animation-name: 'person';
+    animation-duration: 3s;
+}
+
+@keyframes person {
+    from {
+        background-position: top right;
+    }
+} */
+
 header {
-    background-image: url("../img/ilustracion_people.png"), url("../img/ilustracion1.png");
+    background-image: url("../img/ilustracion1.png");
     background-repeat: no-repeat;
     background-position: top right;
     width: 100%;
     background-size: 50%;
+    z-index: -1;
 }
+
+
 
 #logo__block {
     display: flex;
