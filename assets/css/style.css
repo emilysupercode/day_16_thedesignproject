@@ -43,21 +43,13 @@ p {
     HEADER
 ===========================  */
 
-/* 
-#person {
+
+/* #person {
     background-image: url("../img/ilustracion_people.png");
     background-size: contain;
     width: 30px;
-    background-position: top right;
-    z-index: 1;
-    animation-name: 'person';
+    animation-name: person;
     animation-duration: 3s;
-}
-
-@keyframes person {
-    from {
-        background-position: top right;
-    }
 } */
 
 header {
@@ -66,10 +58,7 @@ header {
     background-position: top right;
     width: 100%;
     background-size: 50%;
-    z-index: -1;
 }
-
-
 
 #logo__block {
     display: flex;
@@ -94,10 +83,10 @@ header {
 
 #header__intro h2 {
     font-size: 3rem;
-    width: 50%;
+    width: 100%;
 }
 
-#header__intro article p {
+#header__intro p {
     font-size: 1.5rem;
     width: 60%;
     padding: 1vh 0;
@@ -108,12 +97,55 @@ header {
     height: 1.7rem;
 }
 
-#header__intro p {
+#header__intro p.pink {
     font-size: 1rem;
     width: 75%;
     margin: 4vw 0;
     color: #ff3571;
     font-family: 'Roboto-Bold', sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+.headerR,
+.headerL {
+    width: 50%;
+}
+
+.flex .headerR {
+    margin-right: 80px;
+}
+
+.flex .headerR img {
+    width: 150px;
+    animation-name: person;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes person {
+    0% {
+        transform: translate(-25px, -25px);
+    }
+
+    25% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(25px, 25px);
+    }
+
+    75% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-25px, -25px);
+    }
 }
 
 /* ===========================
